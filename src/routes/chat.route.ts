@@ -100,11 +100,10 @@ chatRouter.post("/chat", async (req, res) => {
     });
 
     const parsedResponse = modelRes.replace("\n", "");
-    messages.push({ content: parsedResponse, role: "system" });
 
     const success = new SuccessErrorApiResponse({
       data: {
-        responseData: messages,
+        responseData: parsedResponse,
       },
       metadata: { code: 200, message: "Chat message found." },
     });
