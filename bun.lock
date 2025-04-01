@@ -7,6 +7,7 @@
         "@datastax/astra-db-ts": "^1.5.0",
         "@google/genai": "^0.7.0",
         "@google/generative-ai": "^0.24.0",
+        "@langchain/core": "^0.3.43",
         "axios": "^1.8.4",
         "cors": "^2.8.5",
         "dotenv": "^16.4.5",
